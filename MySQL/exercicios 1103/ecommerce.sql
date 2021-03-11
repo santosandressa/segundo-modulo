@@ -16,4 +16,7 @@ select * from estoque where preco_produto < 500;
 update estoque set preco_produto = 349.99
 where id = 3;
 
+update estoque set nome_produto = "Roronoa Zoro"
+where id=6;
+
 select * from estoque
