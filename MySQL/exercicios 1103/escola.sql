@@ -1,20 +1,20 @@
-create database escola;
-use escola;
+CREATE DATABASE escola;
+USE escola;
 
-create table alunos(
+CREATE TABLE alunos(
 	id int NOT NULL AUTO_INCREMENT,
-	nome_aluno varchar(50),
-    telefone_aluno int,
-    periodo_aluno varchar(10),
-    turma_aluno enum ('1','2','3','4','5','6','7','8','9'),
-    matricula_aluno smallint,
-    notaFinal decimal(2,0),
-	primary key(id)
-)default charset = utf8mb4;
+	nome_aluno VARCHAR(50),
+    telefone_aluno INT,
+    periodo_aluno VARCHAR(10),
+    turma_aluno ENUM ('1','2','3','4','5','6','7','8','9'),
+    matricula_aluno SMALLINT,
+    notaFinal DECIMAL(2,0),
+	PRIMARY KEY(id)
+)DEFAULT CHARSET = utf8mb4;
 
-insert into alunos
+INSERT INTO alunos
 (nome_aluno, telefone_aluno, periodo_aluno, turma_aluno, matricula_aluno, notaFinal)
-values
+VALUES
 ('Lucas Nery', 999999, 'manhã' , '5', 9433, 7.00),
 ('Ana Silva', 999999, 'tarde' , '7', 7456, 9.00),
 ('Paulo Souza', 999999, 'manhã' , '6', 4758, 5.00),
@@ -24,10 +24,10 @@ values
 ('Patrick Stump', 999999, 'tarde' , '8', 9420, 10.00),
 ('Pete Wentz', 999999, 'noite' , '1', 8452, 6.00);
 
-select  * from alunos where notaFinal > 7.00;
-select * from alunos where notaFinal < 7.00;
+SELECT  * FROM alunos WHERE notaFinal > 7.00;
+SELECT * FROM alunos WHERE notaFinal < 7.00;
 
-update alunos set nome_aluno = "Lucas Nery Gomes"
-where id = 1;
+UPDATE alunos SET nome_aluno = "Lucas Nery Gomes"
+WHERE id = 1;
 
-select * from alunos;
+SELECT * FROM alunos;

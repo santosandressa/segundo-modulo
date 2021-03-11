@@ -1,13 +1,13 @@
-insert into funcionarios 
+INSERT INTO funcionarios 
 (nome, nascimento, cargo, nivel, salario)
-values
+VALUES
 ('Felipe', '2000-11-02', 'suporte técnico','estagiario', '1900');
 
-select * from funcionarios where salario > 2000;
-select * from funcionarios where salario < 2000;
+SELECT * FROM funcionarios WHERE salario > 2000;
+SELECT * FROM funcionarios WHERE salario < 2000;
 
-update funcionarios set salario = 3400, cargo = 'Desenvolvedor front end',
+UPDATE funcionarios SET salario = 3400, cargo = 'Desenvolvedor front end',
 nivel = 'junior'
-where id =  7;
+WHERE id =  7;
 
-select * from funcionarios;
+SELECT * FROM funcionarios;
