@@ -28,7 +28,7 @@ CREATE TABLE tb_classe(
 -- Inserção de valores
 
 INSERT INTO tb_classe (beta_personagem) 
-VALUE 
+VALUES
 ('Sim'),
 ('Não'),
 ('Não'),
